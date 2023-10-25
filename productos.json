@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "nombre": "Arnes",
+        "precio": 230000,
+        "imagen": "./images/arnes.jpeg"
+    },
+    {
+        "id": 2,
+        "nombre": "Bota Industrial",
+        "precio": 80000,
+        "imagen": "./images/botas.jpeg"
+    },
+    {
+        "id": 3,   
+        "nombre": "Casco",
+        "precio": 155000,
+        "imagen": "./images/casco.jpeg"
+    },
+    {
+        "id": 4,
+        "nombre": "Gafas",
+        "precio": 30000,
+        "imagen": "./images/gafas.jpeg"
+    },
+    {
+        "id": 5,
+        "nombre": "Guantes",
+        "precio": 14000,
+        "imagen": "./images/guantes.jpeg"
+    },
+    {
+        "id": 6,
+        "nombre": "Tapa Oído",
+        "precio": 58000,
+        "imagen": "./images/tapaoido.jpeg"
+    }
+]

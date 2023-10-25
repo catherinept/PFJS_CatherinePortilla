@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/images/FDTodo.ico">
+    <title>Ferretería de Todo Shop | </title>
+</head>
+<body>
+    <header>
+        <h1>Ferretería de Todo Shop</h1>
+    </header>
+    <section class="contenedor">
+        <div class="contenedor-items">
+            <div class="item">
+                <span class="titulo-item">Arnes</span>
+                <img src="images/arnes.jpeg" alt="" class="img-item">
+                <span class="precio-item">$230.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Bota Industrial</span>
+                <img src="images/botas.jpeg" alt="" class="img-item">
+                <span class="precio-item">$80.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Casco</span>
+                <img src="images/casco.jpeg" alt="" class="img-item">
+                <span class="precio-item">$155.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Gafas</span>
+                <img src="images/gafas.jpeg" alt="" class="img-item">
+                <span class="precio-item">$30.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Guantes</span>
+                <img src="images/guantes.jpeg" alt="" class="img-item">
+                <span class="precio-item">$32.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Tapa Oído</span>
+                <img src="images/tapaoido.jpeg" alt="" class="img-item">
+                <span class="precio-item">$58.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+        </div>
+       
+        <div class="carrito" id="carrito">
+            <div class="header-carrito">
+                <h2>Tu Carrito</h2>
+            </div>
+
+            <div class="carrito-items">
+                
+            </div>
+            <div class="carrito-total">
+                <div class="fila">
+                    <strong>Tu Total</strong>
+                    <span class="carrito-precio-total">
+                        $000.000,00
+                    </span>
+                </div>
+                <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+            </div>
+        </div>
+    </section>
+
+    <script src="main.js" async></script>
+</body>
+</html>

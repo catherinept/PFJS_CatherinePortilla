@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+header{
+    background: url(images/Fondo-Nav-Bar.jpg);
+    background-size: cover;
+    background-position:center;
+    height: 130px;
+}
+header h1{
+    text-align: center;
+    font-size: 35px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+    padding: 45px;
+}
+.contenedor{ /*Cards*/
+    max-width: 1200px;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    contain: paint;
+}
+
+.contenedor .contenedor-items{ /*Contenedor Cards*/
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap:20px;
+    grid-row-gap: 50px;
+    width: 100%;
+    transition: .3s;
+}
+.contenedor .contenedor-items .item{ /*Contenedor Cards*/
+    max-width: 200px;
+    margin: auto;
+    border: 5px solid #d20000;
+    border-radius: 10px;
+    padding: 20px;
+}
+.contenedor .contenedor-items .item .img-item{/*Contenedor Cards - Imágenes*/
+    width: 100%;
+    height: 155px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.contenedor .contenedor-items .item:hover{/*Contenedor Cards Sombra*/
+    box-shadow: 0 0 10px #666;
+    scale: 1.05;
+}
+.contenedor .contenedor-items .item .titulo-item{/*Contenedor Cards título*/
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    color: #2e2e2e;
+}
+.contenedor .contenedor-items .item .precio-item{/*Contenedor Cards $*/
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color:#af0000;
+}
+
+.contenedor .contenedor-items .item .boton-item{/*Contenedor Cards Botón*/
+    display: block;
+    margin: 10px auto;
+    border: none;
+    background-color: rgb(73, 73, 73);
+    color: #fff;
+    padding: 7px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.carrito{/*carrito */
+    border: 1px solid #666;
+    width: 33%;
+    margin-top: 35px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: auto;
+    transition: .3s;
+}
+.carrito .header-carrito{/*carrito header*/
+    background-color: #404040;
+    color: #fff;
+    text-align: center;
+    padding: 25px 0;
+}
+.carrito .carrito-item{/*carrito box*/
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid #ca0404;
+    padding: 20px;
+}
+.carrito .carrito-item img{/*carrito img*/
+    margin-right: 20px;
+}
+.carrito .carrito-item .carrito-item-titulo{/*carrito texto*/
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.carrito .carrito-item .selector-cantidad{/*carrito +/-*/
+    display: inline-block;
+    margin-right: 25px;
+}
+.carrito .carrito-item .carrito-item-cantidad{/*carrito # cant*/
+    border: none;
+    font-size: 18px;
+    background-color: transparent;
+    display: inline-block;
+    width:30px;
+    padding: 5px;
+    text-align: center;
+}
+.carrito .carrito-item .selector-cantidad i{/*carrito +/-*/
+    font-size: 18px;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+.carrito .carrito-item .carrito-item-precio{/*carrito*/
+    font-weight: bold;
+    display: inline-block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.carrito .carrito-item .btn-eliminar{/*carrito botón eliminar*/
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    color: #393939;
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid #454545;
+    cursor: pointer;
+    display: block;
+    background: transparent;
+    z-index: 20;
+}
+
+.carrito-total{/*carrito botón eliminar*/
+    background-color: #f3f3f3;
+    padding: 25px;
+}
+.carrito-total .fila{/*Total*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.carrito-total .btn-pagar{/*botón pagar*/
+    display: block;
+    width: 100%;
+    border: none;
+    background: #7f0404;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s;
+}
